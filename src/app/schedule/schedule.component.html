@@ -1,13 +1,41 @@
 <div class="alert">
-    <img src="/assets/Alert.svg" alt=""> <p>Pick the time for your initial lesson. The schedule is in your local time zone.</p>
+  <img src="/assets/Alert.svg" alt="" />
+  <p>
+    Pick the time for your initial lesson. The schedule is in your local time
+    zone.
+  </p>
 </div>
 <div class="times">
-    <button class="twentyfive">25 mins</button>
-    <button class="fifty">50 mins</button>
+  <button (click)="setTwentyFive()" [ngClass]="fiftymin?'':'button-selected'" class="twentyfive">25 mins</button>
+  <button (click)="setfifty()" [ngClass]="fiftymin?'button-selected':''" class="fifty">50 mins</button>
 </div>
 
 <div class="date-range">
-    <div class="date-change">
-        <img class="back" src="/assets/Vector (6).svg" alt=""><img class="next" src="/assets/Vector (7).svg" alt="">
+  <div class="date-change">
+    <div class="back-div">
+      <img class="back" src="/assets/Vector (6).svg" alt="" />
     </div>
+    <div class="next-div">
+      <img class="next" src="/assets/Vector (7).svg" alt="" />
+    </div>
+    <p>Dec 2–8, 2023</p>
+  </div>
+  <div class="select">
+    <select name="time" id="time">
+      <option value="">Select time</option>
+      <option value="">Asia GMT +7</option>
+    </select>
+  </div>
+</div>
+
+<div class="dates">
+  <div *ngFor="let time of schedule; let i = index;" class="date-times">
+    <div [ngStyle]="{'border-top': i==0 ? '3.62px solid #AEB5BC' : '3.62px solid #FF6363'}" class="date-div">
+      <p class="day">{{ time.day }}</p>
+      <p class="date">{{ time.date }}</p>
+    </div>
+    <div *ngFor="let t of time.times" class="time-div">
+        <p class="time">{{ t.substring(0, t.length - 3) }}</p> <span>{{ t.substring(t.length-2, t.length) }}</span>
+    </div>
+  </div>
 </div>

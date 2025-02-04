@@ -13,10 +13,19 @@ import { ScheduleService } from '../schedule.service';
   styleUrl: './schedule.component.css'
 })
 export class ScheduleComponent {
-  schedule: any[][] = [];
+  schedule: any[] = [];
+  fiftymin = true;
   constructor(private scheduleService: ScheduleService) {
     this.schedule = this.scheduleService.getSchedule();
     console.log(this.schedule);
+  }
+
+  setfifty() {
+    this.fiftymin = true;
+  }
+
+  setTwentyFive() {
+    this.fiftymin = false;
   }
 
 

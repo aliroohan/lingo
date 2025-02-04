@@ -23,7 +23,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: #F4F4F8;
+  background-color: #f4f4f8;
   margin-top: 15px;
   border-radius: 7.24px;
 }
@@ -35,26 +35,112 @@ button {
 }
 
 .twentyfive {
-  background-color: #F4F4F8;
+  background-color: #f4f4f8;
 }
 
 .fifty {
-  background-color: #FFFFFF;
-  border: 1.81px solid #DCDCE5;
+  background-color: #f4f4f8;
 }
 
-.twentyfive:hover {
-  background-color: #FFFFFF;
-  border: 1.81px solid #DCDCE5;
+.button-selected {
+  background-color: #ffffff;
+  border: 1.81px solid #dcdce5;
 }
+
+
 
 .date-range {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 15px;
 }
 
-.date-range .date-change  {
-  background-color: #DCDCE5;
-  padding: 10px 15px;
+.date-range .date-change {
+  display: flex;
+  align-items: center;
+}
+
+.date-range .date-change .back-div {
+  background-color: #dcdce5;
+  padding: 9px 16px;
+  border-radius: 7.24px 0px 0px 7.24px;
+  border: 1.81px solid #dcdce5;
+}
+
+.date-range .date-change .next-div {
+  background-color: #ffffff;
+  padding: 9px 16px;
+  border-radius: 0 7.24px 7.24px 0;
+  border: 1.81px solid #dcdce5;
+}
+.date-range .date-change p {
+  margin-left: 10px;
+}
+
+.date-range .select select {
+  border: 1.81px solid #dcdce5;
+  border-radius: 7.24px;
+  padding: 8px 16px;
+}
+
+.dates {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.62px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.dates .date-times {
+  display: flex;
+  width: calc(100% / 7);
+  flex-direction: column;
+  align-items: center;
+}
+
+.dates .date-div {
+  width: 100%;
+  padding-top: 14px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  border-top: 3.62px solid #ff6363;
+}
+
+.dates .time-div {
+  width: 100%;
+  padding: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  margin-top: 25px;
+}
+
+
+.dates .time-div p {
+  font-family: "Poppins";
+font-size: 12.57px;
+font-weight: 600;
+line-height: 12.67px;
+text-align: center;
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+.dates .time-div span {
+  font-family: "Noto Sans";
+font-size: 7.47px;
+font-weight: 600;
+line-height: 10.86px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
 }
