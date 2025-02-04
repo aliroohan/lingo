@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="heading">
+        <h1>Frequently Asked Questions:</h1>
+    </div>
+
+    <div class="faqs">
+        
+        <div *ngFor="let f of faqs;let i = index" class="faq">
+            <div (click)="rooldown(i)" id="q{{i}}" class="question">
+                <h2>{{ f.question }}</h2>
+                <img id="i{{i}}" src="/assets/Vector (4).svg" alt="" />
+            </div>
+            <div id="a{{i}}" class="answer">
+                <p id="p{{i}}" style="height: 0; opacity: 0;">{{ f.answer }}</p>
+            </div>
+        </div>
+    </div>
+</div>  

@@ -1,0 +1,161 @@
+
+.card {
+  min-height: 276px;
+  border: 2px solid #f7b6b2;
+  border-radius: 16px;
+  padding: 26px;
+  display: flex;
+  margin-bottom: 24px;
+}
+ .avatar {
+  width: 160px;
+  height: 160px;
+  margin-right: 15px;
+}
+
+.card .card-info {
+  width: 65%;
+}
+
+.card .card-info .name {
+  display: flex;
+  gap: 10px;
+}
+
+.card .card-info .name h2 {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.card .card-info .details p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #4d4c5c;
+  margin-bottom: 4px;
+}
+
+.card .card-info .details .lorem {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #121117;
+}
+
+.card .card-info .details .lorem span {
+  font-weight: 700;
+}
+
+.card .card-info .details a {
+  color: #121117;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22.86px;
+  text-align: left;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.card .buttons {
+  width: 240px;
+  display: flex;
+  gap: 15px;
+}
+
+.card .buttons .rate {
+  display: flex;
+  gap: 4px;
+}
+
+.card .buttons .rate p {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.card .buttons .price h3 {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.card .buttons .rev {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.card .button {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card .button button {
+  width: 248px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25.71px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.card .button button:first-child {
+  background-color: #ff6363;
+  font-family: "Poppins";
+  color: #fff;
+}
+
+.card .button button:last-child {
+  background-color: #ffffff;
+  font-family: "Poppins";
+  border: 2px solid #dcdce5;
+  color: #000;
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  

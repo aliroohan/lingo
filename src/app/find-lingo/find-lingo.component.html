@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="search">
+    <input type="text" placeholder="Search by name or tutor...." [(ngModel)]="search" />
+    <button (click)="searchUser()">Search</button>
+  </div>
+  <div class="filters">
+    <select name="study" id="study">
+      <option value="">Select Study</option>
+    </select>
+    <select name="price" id="price">
+      <option value="">Price per lesson</option>
+    </select>
+    <select name="country" id="country">
+      <option value="">Country of birth</option>
+    </select>
+    <select name="avail" id="avail">
+      <option value="">My availability</option>
+    </select>
+  </div>
+  <div class="filters-2">
+    <select name="special" id="special">
+      <option value="">Specialties</option>
+    </select>
+    <select name="speak" id="speak">
+      <option value="">Also speaks</option>
+    </select>
+    <select name="speaker" id="speaker">
+      <option value="">Native speaker</option>
+    </select>
+    <select name="tutor" id="tutor">
+      <option value="">Tutor categories</option>
+    </select>
+  </div>
+  <div class="cards">
+    <div class="results">
+      <p>Showing {{this.users.length}} results that match your search</p>
+    </div>
+      <app-card *ngFor="let user of users" [user]="user"></app-card>
+  </div>
+
+  <div *ngIf="isloading" class="loading">
+    <span class="loader"></span>
+  </div>
+  <div class="view-more">
+    <button (click)="viewMore()">View More</button>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+<div class="card">
+    <img (click)="openProfile(user)" style="cursor: pointer;" class="avatar" [src]="user.picture.large" alt="" />
+    <div class="card-info">
+      <div (click)="openProfile(user)" style="cursor: pointer;" class="name">
+        <h2 >{{ user.name.first + " " + user.name.last }}</h2>
+        <img src="/assets/SVG.svg" alt="" />
+        <img src="/assets/gb.svg fill.svg" alt="" />
+      </div>
+      <div class="details">
+        <p><img src="/assets/Vector (1).svg" alt="" /> English</p>
+        <p>
+          <img src="/assets/Vector (2).svg" alt="" /> 20 Active Students • 25
+          lessons
+        </p>
+        <p>
+          <img src="/assets/SVG (1).svg" alt="" /> English (Native), Spanish
+          (Advanced)
+        </p>
+        <p class="lorem">
+          <b> Lorem ipsum dolor sit amet consectetur.</b> Egestas interdum
+          egestas lorem nisi. Magna ullamcorper odio amet tristique.
+        </p>
+        <a style="cursor: pointer;" (click)="openProfile(user)"> Read more </a>
+      </div>
+    </div>
+    <div class="bb">
+      <div class="buttons">
+        <div class="reviews">
+          <div class="rate">
+            <img src="/assets/Vector (3).svg" alt="" />
+            <p>4.7</p>
+          </div>
+          <p class="rev">36 reviews</p>
+        </div>
+        <div class="price">
+          <h3>$100</h3>
+          <p class="rev">1 hour lesson</p>
+        </div>
+        <div class="like">
+          <img
+            src="/assets/div.stylesRebranded_GridCellFavorite__FvOIv.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="button">
+        <button>Book trail lesson</button>
+        <button>Message</button>
+      </div>
+    </div>
+  </div>

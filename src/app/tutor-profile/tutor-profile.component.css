@@ -1,0 +1,263 @@
+.container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 77px auto;
+  gap: 10px;
+}
+
+.user-details {
+  display: flex;
+  gap: 20px;
+}
+
+.image img {
+  width: 215px;
+  height: 215px;
+}
+
+.card-info .name {
+  display: flex;
+  gap: 10px;
+}
+
+.card-info .name h2 {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.card-info .details p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #4d4c5c;
+  margin-bottom: 4px;
+}
+
+.card-info .details .lorem {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #121117;
+}
+
+.card-info .details .lorem span {
+  font-weight: 700;
+}
+
+.video {
+  width: 428px;
+  height: 526px;
+  border: 2px solid #f7b6b2;
+  border-radius: 8px;
+}
+
+.video .vid {
+  margin: 20px auto;
+  width: 90%;
+  height: 218px;
+  overflow: hidden;
+}
+
+.video .video-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  height: 218px;
+  overflow: hidden;
+  background: #1e1e2cbf;
+  position: relative;
+  z-index: 5;
+  transform: translateY(-238px);
+  border-radius: 8px;
+}
+
+.video .vid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+  border-radius: 8px;
+}
+
+.prices {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: -218px;
+}
+
+.rate {
+  display: flex;
+  gap: 4px;
+}
+
+.rate p {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.price h3 {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.rev {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+  
+  
+}
+
+.button button {
+  width: 90%;
+  height: 48px;
+  
+  border-radius: 8px;
+  border: none;
+  font-family: "Poppins";
+    margin: 0 auto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25.71px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  border: 2px solid #DCDCE5;
+  background-color: #fff;
+}
+
+.button button:first-child {
+    background-color: #FF6363;
+    color: #fff;
+    border: none;
+}
+
+.bar {
+  width: 40%;
+    position: relative;
+    top: -360px;
+  margin-top: 20px;
+  margin-left: 10%;
+    
+
+}
+
+.bar ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+    list-style: none;
+    border-bottom: 1px solid #F4F4F8;
+}
+
+.bar ul li {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 25px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #4D4C5C;
+    cursor: pointer;
+}
+
+.bar ul li a {
+    text-decoration: none;
+    color: #4D4C5C;
+}
+
+
+@media screen and (max-width: 990px) {
+  .container {
+    width: 90%;
+  }
+
+  .bar {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  
+  .bar {
+    width: 34%;
+    top: -250px;
+  }
+
+  .bar ul li {
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .video {
+    width: 100%;
+  }
+
+  .bar {
+    margin-right: 5%;
+    width: 90%;
+    top: -53px;
+}
+}
+
+
+@media screen and (max-width: 450px) {
+  .image img {
+    width: 150px;
+    height: 150px;
+  }
+}

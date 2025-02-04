@@ -1,0 +1,109 @@
+<div class="container">
+  <div class="user-details">
+    <div class="image">
+      <img
+        [src]="picture"
+        alt=""
+      />
+    </div>
+    <div class="card-info">
+      <div class="name">
+        <h2>{{ name }}</h2>
+        <img src="/assets/SVG.svg" alt="" />
+        <img src="/assets/gb.svg fill.svg" alt="" />
+      </div>
+      <div class="details">
+        <p class="lorem">
+          <b> Lorem ipsum dolor sit amet consectetur.</b>
+        </p>
+        <p><img src="/assets/Vector (1).svg" alt="" /> English</p>
+        <p>
+          <img src="/assets/Vector (2).svg" alt="" /> 20 Active Students • 25
+          lessons
+        </p>
+        <p>
+          <img src="/assets/SVG (1).svg" alt="" /> English (Native), Spanish
+          (Advanced)
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="video">
+    <div class="vid">
+      <img
+        [src]="picture"
+        alt=""
+      />
+    </div>
+    <div class="video-cover">
+      <img src="/assets/Group 5036.png" alt="" />
+    </div>
+    <div class="prices">
+      <div class="reviews">
+        <div class="rate">
+          <img src="/assets/Vector (3).svg" alt="" />
+          <p>4.7</p>
+        </div>
+        <p class="rev">36 reviews</p>
+      </div>
+      <div class="price">
+        <h3>$100</h3>
+        <p class="rev">1 hour lesson</p>
+      </div>
+    </div>
+    <div class="button">
+      <button>Book trail lesson</button>
+      <button>Send message</button>
+      <button>Add to my list</button>
+    </div>
+  </div>
+</div>
+
+<div class="bar">
+  <ul>
+    <li
+      (click)="aboutClick()"
+      [ngStyle]="
+        about ? { 'border-bottom': '1px solid #FF6363' } : { border: 'none' }
+      "
+    >
+      About
+    </li>
+    <li
+      (click)="scheduleClick()"
+      [ngStyle]="
+        schedule ? { 'border-bottom': '1px solid #FF6363' } : { border: 'none' }
+      "
+    >
+      Schedule
+    </li>
+    <li
+      (click)="reviewsClick()"
+      [ngStyle]="
+        reviews ? { 'border-bottom': '1px solid #FF6363' } : { border: 'none' }
+      "
+    >
+      Reviews (50)
+    </li>
+    <li
+      (click)="resumeClick()"
+      [ngStyle]="
+        resume ? { 'border-bottom': '1px solid #FF6363' } : { border: 'none' }
+      "
+    >
+      Resume
+    </li>
+  </ul>
+  <div *ngIf="about" class="about">
+    <app-about></app-about>
+  </div>
+  <div *ngIf="schedule" class="schedule">
+    <app-schedule> </app-schedule>
+  </div>
+  <div *ngIf="reviews" class="reviews">
+    <app-reviews></app-reviews>
+  </div>
+  <div *ngIf="resume" class="resume">
+    <app-resume></app-resume>
+  </div>
+</div>

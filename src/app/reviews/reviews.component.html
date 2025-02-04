@@ -1,0 +1,74 @@
+<h2>Reviews</h2>
+
+<div class="main">
+  <div class="total">
+    <h3>5</h3>
+    <div class="stars">
+      <img src="/assets/SVG (2).svg" alt="" /><img
+        src="/assets/SVG (2).svg"
+        alt=""
+      /><img src="/assets/SVG (2).svg" alt="" /><img
+        src="/assets/SVG (2).svg"
+        alt=""
+      /><img src="/assets/SVG (2).svg" alt="" />
+    </div>
+    <p>41 reviews</p>
+  </div>
+  <div class="rate-bars">
+    <div class="bar">
+      <p>5</p>
+
+      <div
+        class="bar-5"
+        style="background-color: #121212; border-radius: 8px"
+      ></div>
+      <p>(41)</p>
+    </div>
+    <div class="bar">
+      <p>4</p>
+
+      <div class="bar-4"></div>
+      <p>(0)</p>
+    </div>
+    <div class="bar">
+      <p>3</p>
+
+      <div class="bar-3"></div>
+      <p>(0)</p>
+    </div>
+    <div class="bar">
+      <p>2</p>
+
+      <div class="bar-2"></div>
+      <p>(0)</p>
+    </div>
+    <div class="bar">
+      <p>1</p>
+
+      <div class="bar-1"></div>
+      <p>(0)</p>
+    </div>
+  </div>
+</div>
+
+<div class="reviews">
+  <div *ngFor="let rev of reviews" class="review">
+    <div class="user">
+      <img src="/assets/List → Item → Picture.png" alt="" />
+      <div class="name">
+        <h3>{{ rev.name }}</h3>
+        <p>December 1, 2023</p>
+      </div>
+    </div>
+    <div class="stars-2">
+      <img src="/assets/SVG (2).svg" alt="" /><img
+        src="/assets/SVG (2).svg"
+        alt=""
+      /><img src="/assets/SVG (2).svg" alt="" /><img
+        src="/assets/SVG (2).svg"
+        alt=""
+      /><img src="/assets/SVG (2).svg" alt="" />
+    </div>
+    <p class="comment">{{ rev.comment }}</p>
+  </div>
+</div>
