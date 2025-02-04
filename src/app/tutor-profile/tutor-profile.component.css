@@ -214,6 +214,12 @@
 }
 
 
+@media screen and (max-width: 1275px) {
+  .bar {
+    width: 45%;
+  }
+}
+
 @media screen and (max-width: 990px) {
   .container {
     width: 90%;
@@ -221,13 +227,14 @@
 
   .bar {
     margin-left: 5%;
+    width: 50%;
   }
 }
 
 @media screen and (max-width: 900px) {
   
   .bar {
-    width: 34%;
+    width: 50%;
     top: -250px;
   }
 
