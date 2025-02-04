@@ -47,3 +47,14 @@ button {
   background-color: #FFFFFF;
   border: 1.81px solid #DCDCE5;
 }
+
+.date-range {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.date-range .date-change  {
+  background-color: #DCDCE5;
+  padding: 10px 15px;
+}
