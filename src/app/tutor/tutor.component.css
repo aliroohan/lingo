@@ -1,0 +1,18 @@
+app-faq {
+    position: relative;
+    top: -300px;
+}
+
+@media screen and (max-width: 900px) {
+    app-faq {
+        top: -200px;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    app-faq {
+        top: 0;
+    }
+    
+}

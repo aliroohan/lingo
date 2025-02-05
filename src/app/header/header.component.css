@@ -53,11 +53,102 @@
   border: 1.5px solid #ff6363;
 }
 
+.sidepanel {
+  display: none;
+}
 
+.openbtn {
+  display: none;
+}
 
 @media screen and (max-width: 786px) {
   .header {
-    flex-direction: column;
+    justify-content: start;
     gap: 5px;
+  }
+
+  .header .menu {
+    display: none;
+  }
+
+  .header .user {
+    display: none;
+  }
+
+  .user-in .button {
+    padding-left: 32px;
+    padding-top: 20px;
+    
+  }
+
+  .user-in .button button {
+    width: 127px;
+    height: 30px;
+    background-color: #ffffff;
+    color: #ff6363;
+
+    border-radius: 5.99px;
+    border: 1.5px solid #ff6363;
+  }
+
+  .user-in .images {
+    padding-left: 32px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sidepanel {
+    display: block;
+    height: 100vh; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #fff; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+
+
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  
+  .sidepanel a:hover {
+    color: #c2c1c1;
+  }
+
+ 
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  
+  .openbtn {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+  }
+
+  .openbtn:hover {
+    background-color: #aaaaaa;
   }
 }

@@ -57,29 +57,36 @@
   width: 80%;
 }
 
+.container .filters .select-container {
+    width: 80%;
+}
+
 .container .filters select {
-  width: 80%;
+  width: 100%;
   border: 1.72px solid #dcdce5;
   border-radius: 6.88px;
   height: 52.57px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
   appearance: none;
   background: url("/assets/Vector.svg") no-repeat right 15px center;
   background-size: 10px;
 }
 
-.container .filters > select::after {
-  content: "Select Study";
-  color: #000;
-  font-size: 14px;
-  font-weight: 400;
-  position: absolute;
-  top: -10px;
-  left: 15px;
+.select-label {
+    font-family: "Poppins";
+font-size: 10px;
+font-weight: 400;
+line-height: 14.74px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #121117;
+
 }
+
 
 .container .filters-2 {
   display: flex;
@@ -173,4 +180,32 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.select-container {
+  position: relative;
+}
+
+.select-label {
+  position: absolute;
+  top: 6px;
+  left: 17px;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 786px) {
+    .select-label {
+        font-size: 8px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .select-label {
+        display: none;
+    }
+
+    .container .filters select {
+        padding-top: 10px;
+    }
 }

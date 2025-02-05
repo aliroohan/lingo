@@ -1,6 +1,29 @@
 <div class="header">
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+        <div class="menu-in">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a style="font-weight: 600; color: #FF6363;" href="">Find lingo</a></li>
+                <li><a href="">Find studies</a></li>
+            </ul>
+        </div>
+        <div class="user-in">
+            <div class="button">
+                <button>Become a lingo</button>
+            </div>
+            <div class="images">
+                <img src="assets/Link → en-us.svg.png" alt="">
+                <img src="assets/div.elementor-element.svg" alt="">
+                <img src="assets/Link → circle.png.svg" alt="">
+            </div>
+        </div>
+
+      </div>
+      
+      <button class="openbtn" (click)="openNav()">&#9776;</button>
     <div class="logo">
-        <img src="assets/Logo.png" alt="">
+        <img (click)="redirectToHome()" style="cursor: pointer;" src="assets/Logo.png" alt="">
     </div>
     <div class="menu">
         <ul>

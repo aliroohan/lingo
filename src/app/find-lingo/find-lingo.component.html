@@ -4,18 +4,34 @@
     <button (click)="searchUser()">Search</button>
   </div>
   <div class="filters">
-    <select name="study" id="study">
-      <option value="">Select Study</option>
-    </select>
-    <select name="price" id="price">
-      <option value="">Price per lesson</option>
-    </select>
-    <select name="country" id="country">
-      <option value="">Country of birth</option>
-    </select>
-    <select name="avail" id="avail">
-      <option value="">My availability</option>
-    </select>
+    <div class="select-container">
+      <label for="study" class="select-label">Select Study</label>
+      <select name="study" id="study">
+        <option value="">Select Study</option>
+      </select>
+    </div>
+    
+    <div class="select-container">
+      <label for="price" class="select-label">Price per lesson</label>
+      <select name="price" id="price">
+        <option value="">Price per lesson</option>
+      </select>
+    </div>
+    
+    <div class="select-container">
+      <label for="country" class="select-label">Country of birth</label>
+      <select name="country" id="country">
+        <option value="" selected>Select a country</option>
+        <option *ngFor="let country of countries" value="{{country}}">{{ country }}</option>
+      </select>
+    </div>
+    
+    <div class="select-container">
+      <label for="avail" class="select-label">My availability</label>
+      <select name="avail" id="avail">
+        <option value="">My availability</option>
+      </select>
+    </div>
   </div>
   <div class="filters-2">
     <select name="special" id="special">

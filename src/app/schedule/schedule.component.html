@@ -12,18 +12,18 @@
 
 <div class="date-range">
   <div class="date-change">
-    <div class="back-div">
+    <div (click)="onPrevWeek()" class="back-div">
       <img class="back" src="/assets/Vector (6).svg" alt="" />
     </div>
-    <div class="next-div">
+    <div (click)="onNextWeek()" style="cursor: pointer;" class="next-div">
       <img class="next" src="/assets/Vector (7).svg" alt="" />
     </div>
-    <p>Dec 2–8, 2023</p>
+    <p>{{date}}</p>
   </div>
   <div class="select">
     <select name="time" id="time">
       <option value="">Select time</option>
-      <option value="">Asia GMT +7</option>
+      <option value="7">Asia GMT +7</option>
     </select>
   </div>
 </div>

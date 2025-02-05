@@ -1,20 +1,23 @@
-
 .card {
   min-height: 276px;
   border: 2px solid #f7b6b2;
   border-radius: 16px;
   padding: 26px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
   margin-bottom: 24px;
 }
- .avatar {
+.avatar {
   width: 160px;
   height: 160px;
   margin-right: 15px;
+  grid-row: 1 / span 2;
 }
 
 .card .card-info {
   width: 65%;
+  grid-row: 1 / span 2;
 }
 
 .card .card-info .name {
@@ -152,10 +155,43 @@
 }
 
 @media screen and (max-width: 900px) {
-    .card {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
+  .card {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
   }
-  
+
+  .avatar {
+    grid-row: 1 / span 1;
+    place-self: center;
+  }
+
+  .card .card-info {
+    grid-row: 3 / span 3;
+    place-self: center;
+  }
+
+  .card .buttons {
+    margin-top: 10px;
+    justify-content: center;
+    width: 100%;
+    max-height: 70px;
+  }
+
+  .card .button {
+    margin-top: 20px;
+    place-self: center;
+  }
+
+}
+
+
+@media screen and (max-width: 550px) {
+  .card .card-info {
+    width: 90%;
+  }
+
+  .card .button button {
+    width: 220px;
+  }
+}

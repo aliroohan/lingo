@@ -27,7 +27,6 @@ export class TutorProfileComponent implements OnDestroy {
 
   ngOnDestroy(): void {
     localStorage.removeItem('user');
-    localStorage.clear();
   }
 
 

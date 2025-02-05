@@ -14,6 +14,12 @@ import { CardComponent } from "../card/card.component";
 })
 export class FindLingoComponent {
   isloading = true;
+  countries = [
+    "United States", "Canada", "Mexico", "Brazil", "United Kingdom", 
+    "Germany", "France", "Italy", "Spain", "Netherlands", 
+    "Australia", "India", "China", "Japan", "South Korea", 
+    "Russia", "South Africa", "Egypt", "Turkey", "Argentina"
+  ];
   search = '';
   main: any = [];
   users: any = [];
